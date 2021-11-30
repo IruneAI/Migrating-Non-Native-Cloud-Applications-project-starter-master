@@ -72,7 +72,6 @@ With the help of https://azure.microsoft.com/en-us/pricing/calculator/:
 | *Azure Function*                   |  Consumption   |    In most cases free, but be aware that you may be charged $0.20 per million executions |
 
 ## Architecture Explanation
-This is a placeholder section where you can provide an explanation and reasoning for your architecture selection for both the Azure Web App and Azure Function.
 
 Azure WebApps are a a good choice under business context in which there is a need of lightweight applications and services. That was the case of this choice context. They provided us the following *advantageous* featues:
 - Continuous deployment with Git, Team Foundation Server, GitHub, and DevOps
@@ -89,7 +88,8 @@ Even if they have some resource limitations, it is a great resource to be evalua
  - Again,you are able to focus on your core business and functionality
  - They provide **serverless** compute for Azure.
 
-The main *drawbacks* of this architecture is that there is a limitation on scalibility and high performance demanding context. 
+The main *drawbacks* of this architecture is that there is a limitation on scalibility and high performance demanding context. For the azure function app it has been used the app service service plan. According to the documentation, timeout is difference depending on which hosting method / pricing tier is used to host an Azure Function App. While in the Consumption plan, the default timeout is 5 minutes, there is a different default and maximum timeout for the App Service Plan and Premium Plan pricing (being 5 vs 30 min in comsumption and App Service Plan). This may be a drawback adopting this architecture. However, there are some is some best practices/chitectural patterns to able to deal with it like Function Chaining, among others. Itis a method of breaking up a long running task into multiple shorter running tasks and then linking them together so that each one call the next in the workflow once it completes.
+
 
 Overall, both provides us a way to not only carry out a cost saving plan but also to delegate some of the infraestructure management making your solutions easier to deploy and more important to continuously delivery and monitor your (micro) services.
  
