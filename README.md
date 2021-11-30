@@ -87,6 +87,7 @@ Even if they have some resource limitations, it is a great resource to be evalua
  -They provide all the continually updated infrastructure and resources needed to run your applications. 
  - Again,you are able to focus on your core business and functionality
  - They provide **serverless** compute for Azure.
+ - They may share the same app service plan which would reduce the cost for multiple service plans.
 
 The main *drawbacks* of this architecture is that there is a limitation on scalibility and high performance demanding context. For the azure function app it has been used the app service service plan. According to the documentation, timeout is difference depending on which hosting method / pricing tier is used to host an Azure Function App. While in the Consumption plan, the default timeout is 5 minutes, there is a different default and maximum timeout for the App Service Plan and Premium Plan pricing (being 5 vs 30 min in comsumption and App Service Plan). This may be a drawback adopting this architecture. However, there are some is some best practices/chitectural patterns to able to deal with it like Function Chaining, among others. Itis a method of breaking up a long running task into multiple shorter running tasks and then linking them together so that each one call the next in the workflow once it completes.
 
