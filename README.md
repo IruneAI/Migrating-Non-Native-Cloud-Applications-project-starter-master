@@ -69,7 +69,7 @@ With the help of https://azure.microsoft.com/en-us/pricing/calculator/:
 | *Azure Service Bus*   |    Basic,Standard     |   =0 - $9.81  Free in case of Basic!!!         |
 | *Storage Account*                   |  Pay as you go      |     =$20.80 Average per month         |
 | *App Service Plan*                   |  Premiun V2    |     =$83.95  |
-| *Azure Function*                   |  Consumption   |    Free!!! |
+| *Azure Function*                   |  Consumption   |    In most cases free, but be aware that you may be charged $0.20 per million executions |
 
 ## Architecture Explanation
 This is a placeholder section where you can provide an explanation and reasoning for your architecture selection for both the Azure Web App and Azure Function.
