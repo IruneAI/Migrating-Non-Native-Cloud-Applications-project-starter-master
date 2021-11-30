@@ -73,3 +73,25 @@ With the help of https://azure.microsoft.com/en-us/pricing/calculator/:
 
 ## Architecture Explanation
 This is a placeholder section where you can provide an explanation and reasoning for your architecture selection for both the Azure Web App and Azure Function.
+
+Azure WebApps are a a good choice under business context in which there is a need of lightweight applications and services. They provide:
+- Continuous deployment with Git, Team Foundation Server, GitHub, and DevOps
+- Built-in autoscale and load balancing
+- Supports WordPress, Umbraco, Joomla!, and Drupal
+- Support of multiple languages, such as .NET, .NET Core, Java, Ruby, Node.js, PHP, or Python
+- High availability with auto-patching
+- Vertical or Horizontal scaling.
+- Supports Windows and Linux platforms
+Even if they have some resource limitations, it is a great resource to be evaluated, specially for focusing in core business needs as well as cost savings.
+
+ Azure Functions has their own benefits:
+ -They provide all the continually updated infrastructure and resources needed to run your applications. 
+ - Again,you are able to focus on your core business and functionality
+ - They provide **serverless** compute for Azure.
+
+Overall, both provides a way to not only carry out a cost saving plan but also to delegate some of the infraestructure management making your solutions easier to deploy and more important to continuously delivery and monitor your (micro) services.
+ 
+
+
+
+
