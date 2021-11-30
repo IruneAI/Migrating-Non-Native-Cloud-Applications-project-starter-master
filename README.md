@@ -66,9 +66,10 @@ With the help of https://azure.microsoft.com/en-us/pricing/calculator/:
 | Azure Resource | Service Tier | Monthly Cost |
 | ------------ | ------------ | ------------ |
 | *Azure Postgres Database* |  [Single Server]( https://azure.microsoft.com/en-us/pricing/details/postgresql/server/), Pay as you go  |     =$127.90 Average per month         |
-| *Azure Service Bus*   |    Basic,Standard     |   =0 - $9.81           |
+| *Azure Service Bus*   |    Basic,Standard     |   =0 - $9.81  Free in case of Basic!!!         |
 | *Storage Account*                   |  Pay as you go      |     =$20.80 Average per month         |
 | *App Service Plan*                   |  Premiun V2    |     =$83.95  |
+| *Azure Function *                   |  Consumption   |    Free!!! |
 
 ## Architecture Explanation
 This is a placeholder section where you can provide an explanation and reasoning for your architecture selection for both the Azure Web App and Azure Function.
